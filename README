@@ -1,0 +1,11 @@
+### Mach Eight Challenge twon numbers addition
+
+To solve the challenge, three Python functions with different search algorithms have been developed:
+
+the first option is the class search algorithm with two nested cycles. it goes through the array and a copy of the array comparing each elemente with each of the other elements in the list. This function is called "Compare" and its complexity is N^2.
+
+the second option is with the function "twoCompare", which performs the comparison of each element of the array with itself but executing a search from the extremes to the center. this algorithm has a complexity of 
+N^(N-i)
+
+the third option is with the function "searchAdd" this function sorts the list through the Merge-sort function, then searches from a binary search method and reduces the size of the list on each hit. this algorithm has a complexity of 
+N*Log(N-i)
