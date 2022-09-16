@@ -47,10 +47,10 @@ class functions:
     index = -1
     while (first <= last) and (index == -1):
         mid = (first+last)//2
-        if (int(lys[mid]) == val):
+        if (float(lys[mid]) == val):
           index = mid
         else:
-            if val<int(lys[mid]):
+            if val<float(lys[mid]):
                 last = mid -1
             else:
                 first = mid +1
@@ -58,16 +58,13 @@ class functions:
 
   def searchAdd(target, lista):
     resp=[]
-    #lista=functions.mergeSort(lista)
     ListaOr = functions.mergeSort(lista)
     numList2 = ListaOr[:]
-    #print ("-------------Lista Ordenada:----------")
-    #print (ListaOr)
     for i in range(0, len(ListaOr)):
-      targetTemp = (int(target) - int(ListaOr[i]))
-      piv = functions.BinarySearch(numList2,int (targetTemp))
-      suma=(int(numList2[piv])+ int(ListaOr[i]))
-      if (piv != -1) and ( int(ListaOr[i]) != int(numList2[piv]))  and suma==int(target): 
+      targetTemp = (float(target) - float(ListaOr[i]))
+      piv = functions.BinarySearch(numList2,float (targetTemp))
+      suma=(float(numList2[piv])+ float(ListaOr[i]))
+      if (piv != -1) and ( float(ListaOr[i]) != float(numList2[piv]))  and suma==float(target): 
         resp.append([int(numList2[piv]),int(ListaOr[i])])
         numList2[i] = 0.5
     return resp
