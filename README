@@ -9,7 +9,7 @@ the second option is with the function "twoCompare", which performs the comparis
 the third option is with the function "searchAdd" this function sorts the list through the Merge-sort function, then searches from a binary search method and reduces the size of the list on each hit. this algorithm has a complexity of 
 NLog(N)
 
-For execute the project, discard the repository on a pc whith a last version of python installed, the version used for the project is Python 3.10.2. Next is required edited the numbers.txt file, writing a list of integer numbers separated with ',' character and finalize whith a target integer number separated whith space character before the same. Finally we can execute the controller.py file whith the command: /controller.py on the terminal window, and located in the folder of the project route.
+For execute the project, discard the repository on a pc whith a last version of python installed, the version used for the project is Python 3.10.2. Next is required to edit the numbers.txt file, writing a list of integer numbers separated with ',' character and finalize whith a target integer number separated whith space character before the same. Finally we can execute the controller.py file whith the command: /controller.py on the terminal window, and located in the folder of the project route.
 
 The result of excution show in screen three lists whith the validation of the three algoritms developed for the challenge.
 
