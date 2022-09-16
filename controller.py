@@ -11,6 +11,7 @@ print("Target: "+obj)
 
 print("--------funcion de comparacion izq -> der: ------")
 resultado = functions.Compare(lista, obj, result)
+#functions.count_elapsed_time(functions.Compare(lista, obj, result))
 print(resultado)
 
 lista = functions.readList("numbers.txt")

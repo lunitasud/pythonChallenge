@@ -61,9 +61,9 @@ class functions:
     #lista=functions.mergeSort(lista)
     ListaOr = functions.mergeSort(lista)
     numList2 = ListaOr[:]
-    print ("-------------Lista Ordenada:----------")
-    print (ListaOr)
-    for i in range(0, len(ListaOr)-1):
+    #print ("-------------Lista Ordenada:----------")
+    #print (ListaOr)
+    for i in range(0, len(ListaOr)):
       targetTemp = (int(target) - int(ListaOr[i]))
       piv = functions.BinarySearch(numList2,int (targetTemp))
       suma=(int(numList2[piv])+ int(ListaOr[i]))

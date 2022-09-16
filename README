@@ -4,8 +4,13 @@ To solve the challenge, three Python functions with different search algorithms 
 
 the first option is the class search algorithm with two nested cycles. it goes through the array and a copy of the array comparing each elemente with each of the other elements in the list. This function is called "Compare" and its complexity is N^2.
 
-the second option is with the function "twoCompare", which performs the comparison of each element of the array with itself but executing a search from the extremes to the center. this algorithm has a complexity of 
-N^(N-i)
+the second option is with the function "twoCompare", which performs the comparison of each element of the array with itself but executing a search from the extremes to the center. this algorithm has a polynomial complexity.
 
 the third option is with the function "searchAdd" this function sorts the list through the Merge-sort function, then searches from a binary search method and reduces the size of the list on each hit. this algorithm has a complexity of 
-N*Log(N-i)
+NLog(N)
+
+For execute the project, discard the repository on a pc whith a last version of python installed, the version used for the project is Python 3.10.2. Next is required edited the numbers.txt file, writing a list of integer numbers separated with ',' character and finalize whith a target integer number separated whith space character before the same. Finally we can execute the controller.py file whith the command: /controller.py on the terminal window, and located in the folder of the project route.
+
+The result of excution show in screen three lists whith the validation of the three algoritms developed for the challenge.
+
+Thanks for read! ;)
